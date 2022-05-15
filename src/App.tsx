@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+
+// Components
+import Home from './components/organisms/Home'
+import Login from './components/organisms/Login'
+import NotFound from './components/organisms/NotFound'
+import Employee from './components/organisms/EmployeeDashboard'
+import PageTemplate from './components/templates/PageTemplate'
+import EmployeeSheet from './components/organisms/EmployeeSheet'
+import AdminDashboard from './components/organisms/AdminDashboard'
+import CreateEmployee from './components/organisms/CreateEmployee'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PageTemplate>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/employee" element={<Employee />} />
+          <Route path="/admin" element={<AdminDashboard/>} />
+          <Route path="/admin/self" element={<Employee/>} />
+          <Route path="/admin/create" element={<CreateEmployee/>} />
+          <Route path="/admin/:id" element={<EmployeeSheet/>} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </PageTemplate>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
