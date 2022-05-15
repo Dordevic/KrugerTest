@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "lastname": "Admin",
+      "idNumber": 1234567890,
+      "username": "Admin",
+      "email": "Admin@kruger.com",
+      "password": "Admin",
+      "role": "Admin",
+      "birthdate": "1992-07-22",
+      "address": "Main office",
+      "cellphone": "3211234567",
+      "vaxinated": true,
+      "vaxination": {
+        "vaxine": "Sputnik",
+        "date": "2022-05-05",
+        "dose": "2"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Employee",
+      "lastname": "1",
+      "idNumber": 1234567891,
+      "username": "Employee",
+      "email": "Employee@kruger.com",
+      "password": "Employee",
+      "role": "Employee",
+      "birthdate": "1992-07-22",
+      "address": "One address 2",
+      "cellphone": "3211234567",
+      "vaxinated": true,
+      "vaxination": {
+        "vaxine": "AstraZeneca",
+        "date": "2022-05-12",
+        "dose": "3"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Employee",
+      "lastname": "2",
+      "idNumber": 1234567892,
+      "username": "Employee2",
+      "email": "Employee2@kruger.com",
+      "password": "Employee2",
+      "role": "Employee",
+      "birthdate": "1997-02-15",
+      "address": "Another Address",
+      "cellphone": "3211234567",
+      "vaxinated": false,
+      "vaxination": {}
+    },
+    {
+      "name": "Daniel Jose",
+      "lastname": "Penagos",
+      "email": "penutodordevic@gmail.com",
+      "idNumber": "1010123456",
+      "id": 4,
+      "username": "DanielJosePenagos",
+      "password": "DanielJosePenagos",
+      "role": "Employee"
+    }
+  ]
+}
